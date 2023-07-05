@@ -11,8 +11,8 @@ void GameManager::Play()
 	while (true)
 	{
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		cout << "ÇöÀç ºù°í: " << bingoCount << endl;
-		cout << "¿øÇÏ´Â ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä. (0 ~ 24): ";
+		cout << "í˜„ìž¬ ë¹™ê³ : " << bingoCount << endl;
+		cout << "ì›í•˜ëŠ” ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”. (0 ~ 24): ";
 		int answer;
 		cin >> answer;
 
@@ -23,8 +23,8 @@ void GameManager::Play()
 		if (CheckBingo(&bingoCount))
 		{
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << "ÇöÀç ºù°í: " << bingoCount << endl;
-			cout << "ºù°í ¿Ï·á!!!" << endl;
+			cout << "í˜„ìž¬ ë¹™ê³ : " << bingoCount << endl;
+			cout << "ë¹™ê³  ì™„ë£Œ!!!" << endl;
 			return;
 		}
 	}
